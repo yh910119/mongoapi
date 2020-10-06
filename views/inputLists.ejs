@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안녕하세요</title>
+    <style>
+      input {
+        width: 300px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/api/list" method="POST">
+      제목 : <input type="text" name="title" placeholder="제목" required />
+      <br /><br />
+      내용 :
+      <textarea
+        type="text"
+        rows="10px;"
+        cols="100px;"
+        name="contents"
+        placeholder="내용"
+        required
+      ></textarea>
+      <br /><br />
+      글쓴이 :
+      <input
+        type="text"
+        style="width: 285px"
+        name="author"
+        placeholder="글쓴이"
+        required
+      /><br /><br />
+      <input type="submit" value="제출" style="margin-left: 55px" />
+    </form>
+  </body>
+</html>
